@@ -20,7 +20,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ap4-uw-DXy">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wz4-l4-4dP">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wz4-l4-4dP">
                                     <size key="itemSize" width="394" height="49"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -28,24 +28,25 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="hn9-XC-cgE" customClass="CollectionViewCell" customModule="LandmarkBook" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="0.0" width="394" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g6h-rp-yf6">
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ru-3j-woj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="500" translatesAutoresizingMaskIntoConstraints="NO" id="3Ru-3j-woj">
                                                     <rect key="frame" x="0.0" y="0.0" width="394" height="49"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="3Ru-3j-woj" secondAttribute="bottom" id="ANc-3C-YSF"/>
-                                                <constraint firstAttribute="trailing" secondItem="3Ru-3j-woj" secondAttribute="trailing" id="B4r-YP-mng"/>
-                                                <constraint firstItem="3Ru-3j-woj" firstAttribute="leading" secondItem="g6h-rp-yf6" secondAttribute="leading" id="HT5-6h-GAd"/>
-                                                <constraint firstItem="3Ru-3j-woj" firstAttribute="top" secondItem="g6h-rp-yf6" secondAttribute="top" id="uzP-vg-Jux"/>
+                                                <constraint firstItem="3Ru-3j-woj" firstAttribute="top" secondItem="g6h-rp-yf6" secondAttribute="top" id="3gK-EY-OJd"/>
+                                                <constraint firstAttribute="bottom" secondItem="3Ru-3j-woj" secondAttribute="bottom" id="9fY-RE-e8O"/>
+                                                <constraint firstItem="3Ru-3j-woj" firstAttribute="leading" secondItem="g6h-rp-yf6" secondAttribute="leading" id="IQH-TM-WSi"/>
+                                                <constraint firstAttribute="trailing" secondItem="3Ru-3j-woj" secondAttribute="trailing" id="IYt-bM-0o5"/>
+                                                <constraint firstItem="3Ru-3j-woj" firstAttribute="leading" secondItem="g6h-rp-yf6" secondAttribute="leading" constant="15" id="RV3-fJ-6aK"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="394" height="49"/>
@@ -63,10 +64,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ap4-uw-DXy" secondAttribute="trailing" id="2fz-pw-jMG"/>
-                            <constraint firstItem="ap4-uw-DXy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4uS-b4-LRB"/>
-                            <constraint firstItem="ap4-uw-DXy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ke0-dy-whS"/>
-                            <constraint firstItem="ap4-uw-DXy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w3l-b7-gZO"/>
+                            <constraint firstAttribute="trailing" secondItem="ap4-uw-DXy" secondAttribute="trailing" id="FEm-Zo-HQs"/>
+                            <constraint firstItem="ap4-uw-DXy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="M1v-of-dHK"/>
+                            <constraint firstItem="ap4-uw-DXy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pyc-v5-aMX"/>
+                            <constraint firstItem="ap4-uw-DXy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QVR-n3-A9X"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kkn-qL-9Da"/>
